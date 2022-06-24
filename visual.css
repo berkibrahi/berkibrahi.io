@@ -1,0 +1,39 @@
+body{
+    background-color: blueviolet;
+   
+}
+#container{
+   
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li{
+   
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    background-color:#fff;
+   color: blueviolet;
+  font-size: 100px;
+  transition: 300ms all;
+}
+ul{
+    display: flex;
+    transition: 300ms all;
+}
+ul:hover li:nth-child(odd){
+    transform:skewy(-15deg);
+    box-shadow: 15px 30px 15px black;
+}
+ul:hover li:nth-child(even){
+    transform:skewY(15deg);
+    box-shadow: 15px 30px 15px black;
+}
+ul:hover{
+    transform: rotatey(-55deg);
+}
